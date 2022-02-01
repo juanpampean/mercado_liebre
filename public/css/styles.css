@@ -56,14 +56,14 @@ section {
 
 
 header .form .input{
-    display:inline;
+    display:block;
     background-color: #FFF;
     border: 1px solid #000;
     outline: none;
     color: #666;
     padding: 2px;
 }
-input {
+header input {
     display:block;
     outline:none;
     line-height: 1.2em;
@@ -71,21 +71,21 @@ input {
     width:250px;
     font-size: 12pt;
 }
-
+.main-header-top-bar {
+    display:flex;
+    
+}
 
 header div div .form {
-    display: inline-block;
+    display: flex;
     margin:auto;
     padding: 3px;
     font-size:12px;
     width:50%;
-
+    background-color: white;
 }
-header .form .submit{
-    background-color: #FFF;
-    border: 1px solid #000;
-    color: #666;
-    width: 10%;
+.form i {
+    font-size:20px;
 }
 
 header {
@@ -114,12 +114,11 @@ header {
 section.banner img{
     width: 100%;
 }
-main {
+.main-home {
     width:90vw;
     text-align: center;
     margin:0 auto;
     background-color:#ebebeb;
-    border: black dotted 2px;
 }
 
 .products,.offers {
@@ -194,8 +193,9 @@ h3 {
 }
 
 footer{
-    background-color: #Fff;
+    background-color: #EAC926;
     text-align: center;
+    
    
   }
 
@@ -206,6 +206,7 @@ footer{
     margin-right: 1em;
   }
   footer h3{
+    margin-top: 20px;
     font-size: 16px;
     margin-bottom: 0.5em;
   }
@@ -213,6 +214,12 @@ footer{
     font-size: 12px;
     margin-bottom: 10px;
   }
+
+.login-form {
+    text-align: left;
+    margin:10% 40%
+
+}
 
 /*A Hasta 360 es mobil 361 a 768 es para Tablet, +768 desktop*/
 @media (min-width:361px) {
@@ -249,6 +256,7 @@ footer{
     width:45%;
 }
 footer h3 {
+    margin-top:20px;
     display:block;
     text-align: center;
 }
@@ -290,6 +298,7 @@ footer h3 {
     }
 
     .footer-bar {
+        padding:20px;
         display:flex;
     }
     footer h3 {
@@ -309,3 +318,33 @@ footer h3 {
     }
 }
 
+
+
+.main-register {
+    text-align: left;
+}
+form {
+    padding:15px;
+    text-align: left;
+    background-color:#ebebeb ;
+}
+form div {
+    padding:5px 0px
+}
+.perfilUsuario {
+    padding:10px;
+}
+
+.perfilUsuario label {
+    display:block;
+    padding :10px;
+}
+
+.categorias {
+    display:block;
+    padding:10px
+}
+
+.categorias div {
+    padding-top:10px;
+}
