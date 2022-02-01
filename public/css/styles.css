@@ -1,0 +1,233 @@
+/*● Paleta de colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;*/
+
+/*● Tamaños Tipográficos
+Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px   OK
+Precios: 18px     OK
+Descuentos: 16px
+Descripciones: 16px*/
+
+
+*{
+        margin: 0px;
+        padding: 0px;
+    }
+
+body{
+        font-family: 'Roboto', sans-serif;
+        background-color: #ebebeb;
+    }
+    
+
+h1 {
+    font-size:24px
+}
+
+.precios {
+    font-size:18px
+}
+
+section {
+    font-size:16px
+}
+
+.logo {
+    padding:10px;
+    width:200px;
+}
+.copy-header {
+    font-weight: 400;
+    text-align: center;
+}
+
+
+header .form .input{
+    display:inline;
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+input {
+    display:block;
+    outline:none;
+    line-height: 1.2em;
+    border:none;
+    width:250px;
+    font-size: 12pt;
+}
+
+
+header div div .form {
+    display: inline-block;
+    margin:auto;
+    padding: 3px;
+    font-size:12px;
+
+}
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+
+header {
+    background-color: #EAC926;
+    padding:20px;
+}
+.nav-bar {
+    display:none;
+    list-style:none;
+}
+.site-bar {
+    margin-bottom:15px;
+}
+.burger-menu {
+    text-align:center;
+    background-color:#03264C;
+    margin:auto;
+    display:block;
+    max-width:50px;
+    color:white;
+    border-radius: 8px;
+    padding:15px 0px;
+    font-size:18px;
+}
+
+section.banner img{
+    width: 100%;
+}
+main {
+    width:90vw;
+    text-align: center;
+    margin:0 auto;
+    background-color:#ebebeb;
+    border: black dotted 2px;
+}
+
+.precio_descuento {
+    border-top:#ebebeb solid 1px;
+    width:100% 
+}
+.main-article {
+    padding: 0px 15px;
+    margin: 10px 0px ;
+    background-color: white;
+}
+.nombre_producto {
+    display:none;
+}
+
+footer{
+    background-color: #Fff;
+    text-align: center;
+   
+  }
+  footer i{
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-left:1em;
+    margin-right: 1em;
+  }
+  footer h3{
+    font-size: 16px;
+    margin-bottom: 0.5em;
+  }
+  footer p {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+/*A Hasta 360 es mobil 361 a 768 es para Tablet, +768 desktop*/
+@media (min-width:361px) {
+.nombre_producto {
+    display:block;
+}
+
+.nav-bar {
+    display:block;
+    padding:0;
+    margin:0;
+}
+
+
+
+.nav-bar ul {
+    list-style: none;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color:black;
+    display: inline-block;
+    padding:5px 0px;
+    font-size: 17px;
+}
+.burger-menu {
+    display:none;
+}
+
+.main-article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+ }
+}
+@media (min-width: 769px){
+
+    .top-header {
+        display:flex;
+        justify-content: space-between;
+    }
+    .copy-header {
+        max-width: 350px;
+        text-align:right;
+        align-self: center;
+    }
+    .nav-bar {
+        display:flex;
+        padding:0;
+        margin:0;
+        justify-content: space-between;
+    }
+    
+    
+    .nav-bar ul {
+        display:flex;
+        list-style: none;
+    }
+    .nav-bar li {
+        margin:0px 5px;
+    }
+
+
+    main section div.products article{
+        width: 22%;
+    }
+
+
+    footer {
+        display:flex;
+    }
+    footer div {
+        display:block;
+    }   
+}
+
+@media (min-width:1200px) {
+    .logo {
+        width:250px;
+        
+    }
+    .top-header,.nav-bar {
+        max-width:1200px;
+        margin: 0 auto;
+    }
+}
+
