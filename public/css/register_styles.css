@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+form {
+    padding:15px
+}
+form div {
+    padding:5px 0px
+}
+.perfilUsuario {
+    padding:10px;
+}
+
+.perfilUsuario label {
+    display:block;
+    padding :10px;
+}
+
+.categorias {
+    display:block;
+    padding:10px
+}
+
+.categorias div {
+    padding-top:10px;
+}
