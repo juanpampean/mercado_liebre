@@ -198,6 +198,7 @@ footer{
     text-align: center;
    
   }
+
   footer i{
     font-size: 2em;
     margin-bottom: 10px;
@@ -247,6 +248,11 @@ footer{
 .main-article {
     width:45%;
 }
+footer h3 {
+    display:block;
+    text-align: center;
+}
+
 }
 @media (min-width: 769px){
 
@@ -283,12 +289,13 @@ footer{
         margin:0px 5px;
     }
 
-    footer {
+    .footer-bar {
         display:flex;
     }
-    footer div {
+    footer h3 {
         display:block;
-    }   
+        text-align: center;
+    }
 }
 
 @media (min-width:1200px) {
