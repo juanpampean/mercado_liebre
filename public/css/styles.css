@@ -232,6 +232,9 @@ footer{
     padding:0;
     margin:0;
 }
+.nav-bar i {
+    padding:5px;
+}
 
 .nav-bar ul {
     list-style: none;
